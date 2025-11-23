@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>URL Shortener</h1>
+    <form action="/url" method="POST">
+        <label for="originalUrl">Enter Your URL:</label><br>
+        <input type="url" id="originalUrl" name="originalUrl" placeholder="https://github.com/BikramMondal5" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <% if (locals.id) { %>
+       <p>Short URL Generated: http://localhost:8000/<%= id %></p>
+    <% } %>
+</body>
+</html>
