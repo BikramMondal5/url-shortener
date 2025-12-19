@@ -45,5 +45,5 @@ async function uiRenderFunction (req, res) {
 module.exports = {
     generateNewShortURL,
     redirectURL,
-    uiRenderFunction
+
 }
